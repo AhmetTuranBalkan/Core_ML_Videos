@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<device id="retina4_7" orientation="portrait">
+<adaptation id="fullscreen"/>
+</device>
+<dependencies>
+<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+<capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+</dependencies>
+<customFonts key="customFonts">
+<array key="Futura.ttc">
+<string>Futura-Medium</string>
+</array>
+</customFonts>
+<scenes>
+<!--View Controller-->
+<scene sceneID="tne-QT-ifu">
+<objects>
+<viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreMLVideos" sceneMemberID="viewController">
+<layoutGuides>
+<viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+<viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+</layoutGuides>
+<view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+<rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<subviews>
+<view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jii-GR-c1E">
+<rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+<color key="backgroundColor" red="0.53789526119999997" green="0.94562843419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</view>
+<textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999999999999996" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Utx-Oc-PiA">
+<rect key="frame" x="0.0" y="557" width="375" height="110"/>
+<color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+<constraints>
+<constraint firstAttribute="height" constant="110" id="gA9-ru-jOx"/>
+</constraints>
+<color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+<fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+<textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+</textView>
+</subviews>
+<color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jii-GR-c1E" secondAttribute="bottom" id="4Ez-Gd-NKc"/>
+<constraint firstAttribute="trailing" secondItem="jii-GR-c1E" secondAttribute="trailing" id="5LW-YD-gLD"/>
+<constraint firstItem="jii-GR-c1E" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IBO-3S-jr3"/>
+<constraint firstItem="jii-GR-c1E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Lf5-kW-IrG"/>
+<constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Utx-Oc-PiA" secondAttribute="bottom" id="VHb-wJ-WQT"/>
+<constraint firstItem="Utx-Oc-PiA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VKw-gU-Dni"/>
+<constraint firstAttribute="trailing" secondItem="Utx-Oc-PiA" secondAttribute="trailing" id="uAh-ex-fDZ"/>
+</constraints>
+</view>
+<connections>
+<outlet property="predictionTextView" destination="Utx-Oc-PiA" id="uSU-Rk-wV3"/>
+<outlet property="previewView" destination="jii-GR-c1E" id="jnW-1H-dqI"/>
+</connections>
+</viewController>
+<placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+</objects>
+<point key="canvasLocation" x="1573.5999999999999" y="95.802098950524751"/>
+</scene>
+<!--Navigation Controller-->
+<scene sceneID="cGp-0n-CN2">
+<objects>
+<navigationController automaticallyAdjustsScrollViewInsets="NO" id="rjB-lj-B4b" sceneMemberID="viewController">
+<toolbarItems/>
+<navigationBar key="navigationBar" contentMode="scaleToFill" id="2CW-3b-jWe">
+<rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+<autoresizingMask key="autoresizingMask"/>
+</navigationBar>
+<nil name="viewControllers"/>
+</navigationController>
+<placeholder placeholderIdentifier="IBFirstResponder" id="fDL-YD-bPA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+</objects>
+<point key="canvasLocation" x="798" y="764"/>
+</scene>
+</scenes>
+</document>
+
